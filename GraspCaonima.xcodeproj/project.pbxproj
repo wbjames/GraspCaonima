@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47BC0E5D19835CA0000D3ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */; };
+		47BC0E5F19835CA0000D3ECC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E5E19835CA0000D3ECC /* GameScene.sks */; };
+		47BC0E6119835CA0000D3ECC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E6019835CA0000D3ECC /* GameScene.swift */; };
+		47BC0E6319835CA0000D3ECC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E6219835CA0000D3ECC /* GameViewController.swift */; };
+		47BC0E6619835CA0000D3ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E6419835CA0000D3ECC /* Main.storyboard */; };
+		47BC0E6819835CA0000D3ECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E6719835CA0000D3ECC /* Images.xcassets */; };
+		47BC0E7419835CA0000D3ECC /* GraspCaonimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E7319835CA0000D3ECC /* GraspCaonimaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47BC0E6E19835CA0000D3ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47BC0E4F19835CA0000D3ECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47BC0E5619835CA0000D3ECC;
+			remoteInfo = GraspCaonima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47BC0E5719835CA0000D3ECC /* GraspCaonima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraspCaonima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BC0E5B19835CA0000D3ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47BC0E5E19835CA0000D3ECC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		47BC0E6019835CA0000D3ECC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		47BC0E6219835CA0000D3ECC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		47BC0E6519835CA0000D3ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47BC0E6719835CA0000D3ECC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47BC0E6D19835CA0000D3ECC /* GraspCaonimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraspCaonimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BC0E7219835CA0000D3ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BC0E7319835CA0000D3ECC /* GraspCaonimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraspCaonimaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47BC0E5419835CA0000D3ECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BC0E6A19835CA0000D3ECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47BC0E4E19835CA0000D3ECC = {
+			isa = PBXGroup;
+			children = (
+				47BC0E5919835CA0000D3ECC /* GraspCaonima */,
+				47BC0E7019835CA0000D3ECC /* GraspCaonimaTests */,
+				47BC0E5819835CA0000D3ECC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47BC0E5819835CA0000D3ECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47BC0E5719835CA0000D3ECC /* GraspCaonima.app */,
+				47BC0E6D19835CA0000D3ECC /* GraspCaonimaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47BC0E5919835CA0000D3ECC /* GraspCaonima */ = {
+			isa = PBXGroup;
+			children = (
+				47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */,
+				47BC0E5E19835CA0000D3ECC /* GameScene.sks */,
+				47BC0E6019835CA0000D3ECC /* GameScene.swift */,
+				47BC0E6219835CA0000D3ECC /* GameViewController.swift */,
+				47BC0E6419835CA0000D3ECC /* Main.storyboard */,
+				47BC0E6719835CA0000D3ECC /* Images.xcassets */,
+				47BC0E5A19835CA0000D3ECC /* Supporting Files */,
+			);
+			path = GraspCaonima;
+			sourceTree = "<group>";
+		};
+		47BC0E5A19835CA0000D3ECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47BC0E5B19835CA0000D3ECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47BC0E7019835CA0000D3ECC /* GraspCaonimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				47BC0E7319835CA0000D3ECC /* GraspCaonimaTests.swift */,
+				47BC0E7119835CA0000D3ECC /* Supporting Files */,
+			);
+			path = GraspCaonimaTests;
+			sourceTree = "<group>";
+		};
+		47BC0E7119835CA0000D3ECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47BC0E7219835CA0000D3ECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47BC0E5619835CA0000D3ECC /* GraspCaonima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BC0E7719835CA0000D3ECC /* Build configuration list for PBXNativeTarget "GraspCaonima" */;
+			buildPhases = (
+				47BC0E5319835CA0000D3ECC /* Sources */,
+				47BC0E5419835CA0000D3ECC /* Frameworks */,
+				47BC0E5519835CA0000D3ECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraspCaonima;
+			productName = GraspCaonima;
+			productReference = 47BC0E5719835CA0000D3ECC /* GraspCaonima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47BC0E6C19835CA0000D3ECC /* GraspCaonimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BC0E7A19835CA0000D3ECC /* Build configuration list for PBXNativeTarget "GraspCaonimaTests" */;
+			buildPhases = (
+				47BC0E6919835CA0000D3ECC /* Sources */,
+				47BC0E6A19835CA0000D3ECC /* Frameworks */,
+				47BC0E6B19835CA0000D3ECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47BC0E6F19835CA0000D3ECC /* PBXTargetDependency */,
+			);
+			name = GraspCaonimaTests;
+			productName = GraspCaonimaTests;
+			productReference = 47BC0E6D19835CA0000D3ECC /* GraspCaonimaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47BC0E4F19835CA0000D3ECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = wubin;
+				TargetAttributes = {
+					47BC0E5619835CA0000D3ECC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					47BC0E6C19835CA0000D3ECC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 47BC0E5619835CA0000D3ECC;
+					};
+				};
+			};
+			buildConfigurationList = 47BC0E5219835CA0000D3ECC /* Build configuration list for PBXProject "GraspCaonima" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47BC0E4E19835CA0000D3ECC;
+			productRefGroup = 47BC0E5819835CA0000D3ECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47BC0E5619835CA0000D3ECC /* GraspCaonima */,
+				47BC0E6C19835CA0000D3ECC /* GraspCaonimaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47BC0E5519835CA0000D3ECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BC0E6819835CA0000D3ECC /* Images.xcassets in Resources */,
+				47BC0E5F19835CA0000D3ECC /* GameScene.sks in Resources */,
+				47BC0E6619835CA0000D3ECC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BC0E6B19835CA0000D3ECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47BC0E5319835CA0000D3ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BC0E6119835CA0000D3ECC /* GameScene.swift in Sources */,
+				47BC0E6319835CA0000D3ECC /* GameViewController.swift in Sources */,
+				47BC0E5D19835CA0000D3ECC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BC0E6919835CA0000D3ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BC0E7419835CA0000D3ECC /* GraspCaonimaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47BC0E6F19835CA0000D3ECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47BC0E5619835CA0000D3ECC /* GraspCaonima */;
+			targetProxy = 47BC0E6E19835CA0000D3ECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47BC0E6419835CA0000D3ECC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47BC0E6519835CA0000D3ECC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47BC0E7519835CA0000D3ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47BC0E7619835CA0000D3ECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47BC0E7819835CA0000D3ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GraspCaonima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47BC0E7919835CA0000D3ECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GraspCaonima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47BC0E7B19835CA0000D3ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GraspCaonima.app/GraspCaonima";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraspCaonimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		47BC0E7C19835CA0000D3ECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GraspCaonima.app/GraspCaonima";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraspCaonimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47BC0E5219835CA0000D3ECC /* Build configuration list for PBXProject "GraspCaonima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BC0E7519835CA0000D3ECC /* Debug */,
+				47BC0E7619835CA0000D3ECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BC0E7719835CA0000D3ECC /* Build configuration list for PBXNativeTarget "GraspCaonima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BC0E7819835CA0000D3ECC /* Debug */,
+				47BC0E7919835CA0000D3ECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47BC0E7A19835CA0000D3ECC /* Build configuration list for PBXNativeTarget "GraspCaonimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BC0E7B19835CA0000D3ECC /* Debug */,
+				47BC0E7C19835CA0000D3ECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47BC0E4F19835CA0000D3ECC /* Project object */;
+}
