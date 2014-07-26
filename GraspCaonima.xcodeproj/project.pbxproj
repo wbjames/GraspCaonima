@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4787E0C21983984F00673CC9 /* cnm.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4787E0C11983984F00673CC9 /* cnm.atlas */; };
+		4787E0C41983A21600673CC9 /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787E0C31983A21600673CC9 /* EndGameScene.swift */; };
 		47BC0E5D19835CA0000D3ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */; };
 		47BC0E5F19835CA0000D3ECC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E5E19835CA0000D3ECC /* GameScene.sks */; };
 		47BC0E6119835CA0000D3ECC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E6019835CA0000D3ECC /* GameScene.swift */; };
@@ -14,6 +16,8 @@
 		47BC0E6619835CA0000D3ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E6419835CA0000D3ECC /* Main.storyboard */; };
 		47BC0E6819835CA0000D3ECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BC0E6719835CA0000D3ECC /* Images.xcassets */; };
 		47BC0E7419835CA0000D3ECC /* GraspCaonimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E7319835CA0000D3ECC /* GraspCaonimaTests.swift */; };
+		47BC0E7F19835CD3000D3ECC /* CircleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E7D19835CD3000D3ECC /* CircleFactory.swift */; };
+		47BC0E8019835CD3000D3ECC /* GameObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC0E7E19835CD3000D3ECC /* GameObjectNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4787E0C11983984F00673CC9 /* cnm.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = cnm.atlas; sourceTree = "<group>"; };
+		4787E0C31983A21600673CC9 /* EndGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 		47BC0E5719835CA0000D3ECC /* GraspCaonima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraspCaonima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BC0E5B19835CA0000D3ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		47BC0E6D19835CA0000D3ECC /* GraspCaonimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraspCaonimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BC0E7219835CA0000D3ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47BC0E7319835CA0000D3ECC /* GraspCaonimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraspCaonimaTests.swift; sourceTree = "<group>"; };
+		47BC0E7D19835CD3000D3ECC /* CircleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleFactory.swift; sourceTree = "<group>"; };
+		47BC0E7E19835CD3000D3ECC /* GameObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +87,17 @@
 		47BC0E5919835CA0000D3ECC /* GraspCaonima */ = {
 			isa = PBXGroup;
 			children = (
+				4787E0C11983984F00673CC9 /* cnm.atlas */,
 				47BC0E5C19835CA0000D3ECC /* AppDelegate.swift */,
 				47BC0E5E19835CA0000D3ECC /* GameScene.sks */,
 				47BC0E6019835CA0000D3ECC /* GameScene.swift */,
 				47BC0E6219835CA0000D3ECC /* GameViewController.swift */,
 				47BC0E6419835CA0000D3ECC /* Main.storyboard */,
 				47BC0E6719835CA0000D3ECC /* Images.xcassets */,
+				47BC0E7D19835CD3000D3ECC /* CircleFactory.swift */,
+				47BC0E7E19835CD3000D3ECC /* GameObjectNode.swift */,
 				47BC0E5A19835CA0000D3ECC /* Supporting Files */,
+				4787E0C31983A21600673CC9 /* EndGameScene.swift */,
 			);
 			path = GraspCaonima;
 			sourceTree = "<group>";
@@ -197,6 +209,7 @@
 			files = (
 				47BC0E6819835CA0000D3ECC /* Images.xcassets in Resources */,
 				47BC0E5F19835CA0000D3ECC /* GameScene.sks in Resources */,
+				4787E0C21983984F00673CC9 /* cnm.atlas in Resources */,
 				47BC0E6619835CA0000D3ECC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BC0E8019835CD3000D3ECC /* GameObjectNode.swift in Sources */,
+				47BC0E7F19835CD3000D3ECC /* CircleFactory.swift in Sources */,
 				47BC0E6119835CA0000D3ECC /* GameScene.swift in Sources */,
 				47BC0E6319835CA0000D3ECC /* GameViewController.swift in Sources */,
+				4787E0C41983A21600673CC9 /* EndGameScene.swift in Sources */,
 				47BC0E5D19835CA0000D3ECC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +352,7 @@
 				INFOPLIST_FILE = GraspCaonima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,6 +364,7 @@
 				INFOPLIST_FILE = GraspCaonima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -403,6 +421,7 @@
 				47BC0E7919835CA0000D3ECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47BC0E7A19835CA0000D3ECC /* Build configuration list for PBXNativeTarget "GraspCaonimaTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +430,7 @@
 				47BC0E7C19835CA0000D3ECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

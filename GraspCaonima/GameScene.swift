@@ -1,45 +1,71 @@
-//
-//  GameScene.swift
-//  GraspCaonima
-//
-//  Created by wubin on 7/26/14.
-//  Copyright (c) 2014 wubin. All rights reserved.
-//
-
 import SpriteKit
 
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+    
+    var userStep:Int
+    
+    let circleFactory:CircleFactory = CircleFactory(row: 9, col: 9)
+    
+    init(size : CGSize) {
+        userStep = 0
+        super.init(size :size)
         
-        self.addChild(myLabel)
+        let cnmSprite = SKSpriteNode(imageNamed: "caonima")
+        cnmSprite.position = CGPointMake(0, self.size.height - cnmSprite.size.height)
+        cnmSprite.anchorPoint = CGPointZero
+        //self.addChild(cnmSprite)
+        
+        circleFactory.makeMap()
+        self.addChild(circleFactory)
+    }
+    
+    
+    
+    override func didMoveToView(view: SKView) {
+        
+        
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+        let touch:UITouch = touches.anyObject() as UITouch
+        let positionInGameMap = touch.locationInNode(circleFactory)
+        selectNodeForTouch(positionInGameMap)
+    }
+    
+    func selectNodeForTouch(touchPosition: CGPoint) {
+        let nodes = circleFactory.nodesAtPoint(touchPosition)
+        // println(nodes)
+        for node in nodes {
+            let gameObject:GameObjectNode = node as GameObjectNode
+            if gameObject.type == GameType.Gree {
+                if distanceBetweenTowPoint(touchPosition, pointB: gameObject.position) <= gameObject.size.width / 2{
+                    gameObject.texture = SKTexture(imageNamed: "circle1")
+                    gameObject.type = GameType.Orange
+                    //   println(gameObject)
+                    
+                    if circleFactory.playerMove() == false {
+                        gameOver()
+                    }
+                    userStep++
+                }
+            }
         }
     }
-   
+    
+    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        
+    }
+    
+    func distanceBetweenTowPoint(pointA: CGPoint, pointB: CGPoint) -> CGFloat {
+        let vector = CGVectorMake(pointA.x - pointB.x, pointA.y - pointB.y)
+        return sqrt(vector.dx * vector.dx + vector.dy * vector.dy)
+    }
+    
+    func gameOver(){
+        let endGameScene = EndGameScene(size: self.size, result: circleFactory.gameResult, userStep: userStep)
+        let reveal = SKTransition.fadeWithDuration(0.5)
+        self.view.presentScene(endGameScene, transition: reveal)
+
     }
 }
